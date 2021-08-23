@@ -46,9 +46,7 @@ public class Sudoku {
         int x=scanncer.nextInt();
         if(concede(x, 0,0)){
             System.out.println("Good game");
-            System.out.println(box);
-            System.out.println(horizontal);
-            System.out.println(vertical);
+            
       }
         else{
             System.out.print("Enter a column number: ");
@@ -83,9 +81,7 @@ public class Sudoku {
                 }
                 if(concede(x, y, z)){
                     System.out.println("Good game");
-                    System.out.println(box);
-                    System.out.println(vertical);
-                    System.out.println(horizontal);
+                    
 
                 }
                 else{
