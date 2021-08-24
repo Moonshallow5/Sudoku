@@ -108,18 +108,26 @@ public class Sudoku {
         initial();
         display();
         start();
+        int count=0;
         while (!vertical && !box && !horizontal) {
             pick();
+            count++;
 
             isWinnerBox();
             isWinnerVertical();
             isWnnnerHorizontal();
+            if(count==8 && !vertical && !box && !horizontal){
+                System.out.println("Made a mistake");
+                break;
+            }
             
             displayBoard();
         }
+        
         if(vertical && horizontal && box){
             System.out.println("Well done you won");
         }
+        
     }
     static boolean vertical=false;
     public static boolean isWinnerVertical() {
