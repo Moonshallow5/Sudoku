@@ -165,8 +165,9 @@ public class Sudoku {
     
     }
     static int x;
+    static Scanner scanner =new Scanner(System.in);
     public static void start() {
-        Scanner scanner =new Scanner(System.in);
+        
         System.out.println("Enter 1 to pick first board and 2 for the other one");
         x=scanner.nextInt();
         
@@ -224,7 +225,8 @@ public class Sudoku {
         if(x==1){
             initial();
             some();
-        }else{
+        }
+        else{
             initial();
             some2();
         }
